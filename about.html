@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Michael Morrissey's Portfolio</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ef9b7893e6.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo-container">
+                <a href="http://localhost:5500/index.html" class="nav__logo">
+                    <img class="nav__logo-item" src="./images/profile.jpg" alt="Profile photo of Michael Morrissey">
+                    MICHAEL MORRISSEY
+                </a>
+            </div>
+            
+            <a href="http://localhost:5500/index.html" class="nav__item">
+                HOME
+            </a>
+            <a href="http://localhost:5500/projects.html" class="nav__item">
+                PROJECTS
+            </a>
+            <a href="http://localhost:5500/about.html" class="nav__item">
+                ABOUT
+            </a>
+            <a href="http://localhost:5500/contact.html" class="nav__item">
+                CONTACT
+            </a>
+            <a href="#" class="nav__toggle"><i class="fas fa-bars fa-2x"></i></a>
+        </nav>
+    </header>
+
+    <main class="about">
+        <h1>About Me</h1>
+        <img class="about__image" src="./images/profile.jpg" alt="Profile photo of Michael Morrissey">
+        <p>I'm a web development student at NSCC. I love programming and all aspects of development: from frontend to backend to devops. For more nitty gritty details, have a look at my resume.</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">&copy Michael Morrissey 2021</p>
+            <ul class="links">
+                <li class="links__item">
+                    <a href="http://localhost:5500/index.html">
+                        <i class="far fa-file-pdf fa-4x links__image"></i>
+                        Resume
+                    </a>
+                </li>
+                <li class="links__item">
+                    <a href="https://www.linkedin.com/in/michael-morrissey-147a5186/">
+                        <img src="images/linkedin.svg"  alt="LinkedIn logo" class="links__image linkedin-image">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="links__item">
+                    <a href="https://github.com/MichaelAM">
+                        <img src="images/github.svg"  alt="GitHub logo" class="links__image github-image">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
