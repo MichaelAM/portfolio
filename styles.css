@@ -116,25 +116,40 @@ header > * {
 
 /* projects page */
 .projects {
-    padding: 2rem calc((100% - 62rem) / 2);
+    padding: 2rem calc((100% - 52rem) / 2);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0 2rem;
     min-height: 30rem;
     background-color: white;
 }
 .projects__header {
-    grid-column: 1 / 4;
+    grid-column: 1 / 7;
     text-align: center;
 }
 .projects__item {
-    grid-column: 1 / 4;
+    grid-column: 1 / 7;
     text-align: center;
+    margin-top: 2rem;
+}
+.projects__item--span2 {
+    grid-column: span 2;
+    margin-top: 0;
+}
+.projects__item--span3 {
+    grid-column: span 3;
+    margin-top: 0;
+}
+.projects__title {
+    color: var(--main-color);
+}
+.link-button {
+    appearance: button;
 }
 
 /* about page */
 .about {
-    padding: 2rem calc((100% - 62rem) / 2);
+    padding: 2rem calc((100% - 52rem) / 2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +158,9 @@ header > * {
     min-height: 30rem;
     background-color: white;
     text-align: center;
+}
+.about > * {
+    margin: 2rem 1rem;
 }
 .about__image {
     border-radius: 9999rem;
@@ -198,7 +216,7 @@ form textarea,
   padding: 0.75em 1rem;
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
-  min-width: 25rem;
+  min-width: 20rem;
 }
 form input:focus,
 form select:focus,
@@ -243,7 +261,6 @@ form select {
 
 /* footer */
 footer {
-    
     background-color: var(--main-grey);
     color: var(--off-white);
     padding: 2rem calc((100% - 80rem) / 2);
@@ -304,6 +321,17 @@ footer {
     }
     .links {
         margin: 0 1rem;
+    }
+    .landing > * {
+        margin: 1rem 1rem;
+    }
+    .projects > * {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .projects__item--span2,
+    .projects__item--span3 {
+        grid-column: span 6;
     }
 }
 @media (max-width: 48rem) {
