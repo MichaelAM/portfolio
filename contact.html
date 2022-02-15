@@ -4,11 +4,11 @@
     <title>Michael Morrissey's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact information for Michael Morrissey.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/ef9b7893e6.js" crossorigin="anonymous"></script>
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LcmVzYeAAAAAB9US6tGPBnBRJm0R6C42qB5Zdht"></script>
       <script>
@@ -26,11 +26,19 @@
         <nav class="nav">
             <div class="nav__logo-container">
                 <a href="index.html" class="nav__logo">
-                    <img class="nav__logo-item" src="images/profile.jpg" alt="Profile photo of Michael Morrissey">
+                    <img class="nav__logo-item" src="images/profile.webp" alt="Profile photo of Michael Morrissey">
                     MICHAEL MORRISSEY
                 </a>
             </div>
-            
+            <input type="checkbox" id="nav__toggle" aria-label="Navigation menu toggle">
+            <label for="nav__toggle" class="nav__toggle-label">
+                <svg class="nav__menu" viewBox="0 0 122.879 104.609">
+                    <use href="images/hamburger-menu.svg#main"></use>
+                </svg>
+                <svg class="nav__close" viewBox="0 0 121.31 123.876">
+                    <use href="images/close.svg#main"></use>
+                </svg>
+            </label>
             <a href="index.html" class="nav__item">
                 HOME
             </a>
@@ -43,7 +51,6 @@
             <a href="contact.html" class="nav__item">
                 CONTACT
             </a>
-            <a href="#" class="nav__toggle"><i class="fas fa-bars fa-2x"></i></a>
         </nav>
     </header>
 
@@ -70,19 +77,19 @@
             <ul class="links">
                 <li class="links__item">
                     <a href="Resume - Michael Morrissey.pdf">
-                        <i class="far fa-file-pdf fa-4x links__image"></i>
+                        <img src="images/pdf-files.svg"  alt="PDF icon" class="links__image pdf-image" />
                         Resume
                     </a>
                 </li>
                 <li class="links__item">
                     <a href="https://www.linkedin.com/in/michael-morrissey-147a5186/">
-                        <img src="images/linkedin.svg"  alt="LinkedIn logo" class="links__image linkedin-image">
+                        <img src="images/linkedin.svg"  alt="LinkedIn logo" class="links__image linkedin-image" />
                         LinkedIn
                     </a>
                 </li>
                 <li class="links__item">
                     <a href="https://github.com/MichaelAM">
-                        <img src="images/github.svg"  alt="GitHub logo" class="links__image github-image">
+                        <img src="images/github.svg"  alt="GitHub logo" class="links__image github-image" />
                         GitHub
                     </a>
                 </li>
@@ -93,6 +100,5 @@
         </p>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>
