@@ -8,7 +8,7 @@ html {
     height: 100%;
 }
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-display: swap;
     margin: 0;
     display: flex;
@@ -103,7 +103,7 @@ header > * {
     color: var(--main-grey);
 }
 .nav__logo-item {
-    border-radius: 9999rem;
+    border-radius: 9999px;
     height: 4rem;
     width: 4rem;
     margin-right: 1rem;
@@ -172,6 +172,9 @@ header > * {
 .projects__item {
     grid-column: 1 / 7;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .projects__item--span2 {
     grid-column: span 2;
@@ -191,17 +194,17 @@ header > * {
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-    line-height: 1.5rem;
     background-color: white;
     text-align: center;
 }
 .about__image {
-    border-radius: 9999rem;
+    border-radius: 9999px;
     height: 12rem;
     width: 12rem;
 }
 .about > article > p {
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 /* contact page */
