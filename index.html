@@ -4,74 +4,78 @@
     <title>Michael Morrissey's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Michael Morrissey's web developer portfolio.">
+    <meta name="description" content="Michael Morrissey's web development portfolio.">
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <header class="landing-header">
-        <nav class="nav">
-            <div class="nav__logo-container">
-                <a href="index.html" class="nav__logo">
-                    <img class="nav__logo-item" src="images/profile.webp" alt="Profile photo of Michael Morrissey">
-                    MICHAEL MORRISSEY
+    <header>
+        <div class="header-content">
+            <nav class="nav">
+                <div class="nav__logo-container">
+                    <a href="index.html" class="nav__logo">
+                        <img class="nav__logo-item" src="images/profile.webp" alt="Profile photo of Michael Morrissey">
+                        MICHAEL MORRISSEY
+                    </a>
+                </div>
+                <input type="checkbox" id="nav__toggle" tabindex="-1" aria-label="Navigation menu toggle">
+                <label for="nav__toggle" class="nav__toggle-label">
+                    <svg class="nav__menu" viewBox="0 0 122.879 104.609">
+                        <use href="images/hamburger-menu.svg#main"></use>
+                    </svg>
+                    <svg class="nav__close" viewBox="0 0 121.31 123.876">
+                        <use href="images/close.svg#main"></use>
+                    </svg>
+                </label>
+                <a href="/" class="nav__item">
+                    HOME
                 </a>
-            </div>
-            <input type="checkbox" id="nav__toggle" aria-label="Navigation menu toggle">
-            <label for="nav__toggle" class="nav__toggle-label">
-                <svg class="nav__menu" viewBox="0 0 122.879 104.609">
-                    <use href="images/hamburger-menu.svg#main"></use>
-                </svg>
-                <svg class="nav__close" viewBox="0 0 121.31 123.876">
-                    <use href="images/close.svg#main"></use>
-                </svg>
-            </label>
-            <a href="index.html" class="nav__item">
-                HOME
-            </a>
-            <a href="projects.html" class="nav__item">
-                PROJECTS
-            </a>
-            <a href="about.html" class="nav__item">
-                ABOUT
-            </a>
-            <a href="contact.html" class="nav__item">
-                CONTACT
-            </a>
-        </nav>
+                <a href="projects.html" class="nav__item">
+                    PROJECTS
+                </a>
+                <a href="about.html" class="nav__item">
+                    ABOUT
+                </a>
+                <a href="contact.html" class="nav__item">
+                    CONTACT
+                </a>
+            </nav>
+        </div>
     </header>
 
-    <main class="landing">
-        <h1 class="landing__title">Hey, my name is Michael</h1>
-        <p class="landing__description">I'm a web development student due to graduate from NSCC in spring of 2022. I'm currently seeking a work term, so please reach out if you're looking for a passionate developer to join your team.</p>
-        <a href="projects.html"><button class="landing__button">Projects</button></a>
-    </main>
+    <div class="landing-container">
+        <main class="landing">
+            <h1 class="landing__title">Hey, my name is Michael</h1>
+            <p class="landing__description">I'm a web development student due to graduate from NSCC in spring of 2022. I'm currently seeking a work term, so please reach out if you're looking for a passionate developer to join your team.</p>
+            <a href="projects.html" class="landing__link">Projects</a>
+        </main>
+    </div>
 
-    <footer>
-        <div class="footer-content">
+    <div class="footer-container">
+        <footer class="footer-content">
             <p class="copyright">&copy Michael Morrissey 2021</p>
             <ul class="links">
                 <li class="links__item">
-                    <a href="Michael Morrissey Resume.pdf">
-                        <img src="images/pdf-files.svg"  alt="PDF icon" class="links__image pdf-image" />
+                    <a href="Michael Morrissey Resume.pdf" target="_blank">
+                        <img src="images/pdf-files.svg"  alt="PDF icon" class="links__image" />
                         Resume
                     </a>
                 </li>
                 <li class="links__item">
-                    <a href="https://www.linkedin.com/in/michael-morrissey-147a5186/">
-                        <img src="images/linkedin.svg"  alt="LinkedIn logo" class="links__image linkedin-image" />
+                    <a href="https://www.linkedin.com/in/michael-morrissey-147a5186/" target="_blank">
+                        <img src="images/linkedin.svg"  alt="LinkedIn logo" class="links__image" />
                         LinkedIn
                     </a>
                 </li>
                 <li class="links__item">
-                    <a href="https://github.com/MichaelAM">
-                        <img src="images/github.svg"  alt="GitHub logo" class="links__image github-image" />
+                    <a href="https://github.com/MichaelAM" target="_blank">
+                        <img src="images/github.svg"  alt="GitHub logo" class="links__image" />
                         GitHub
                     </a>
                 </li>
             </ul>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
   </body>
 </html>
