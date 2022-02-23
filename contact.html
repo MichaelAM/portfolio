@@ -5,17 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact information for Michael Morrissey.">
+    <link rel="icon" href="/images/favicon.svg">
     <link rel="stylesheet" href="styles.css">
-
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcmVzYeAAAAAB9US6tGPBnBRJm0R6C42qB5Zdht"></script>
-      <script>
-          grecaptcha.ready(function () {
-              grecaptcha.execute('6LcmVzYeAAAAAB9US6tGPBnBRJm0R6C42qB5Zdht', {action: 'submit'}).then(function (token) {
-                  console.info("got token: " + token);
-                  document.getElementById('g-recaptcha-response').value = token;
-              });
-          });
-      </script>
   </head>
 
   <body>
@@ -55,22 +46,17 @@
 
     <main class="contact">
         <h1 class="contact__heading">Get in touch</h1>
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mjvlgdoa" method="post">
-            <fieldset id="fs-frm-inputs">
+        <form name="contact-form" class="contact__form" method="POST" data-netlify="true" netlify-honeypot="verification-field">
             <label for="full-name">Full Name</label>
             <input type="text" name="name" id="full-name" placeholder="First and last name" maxlength="80" required="">
             <label for="email-address">Email Address</label>
             <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" maxlength="80" required="">
             <label for="message">Message</label>
             <textarea rows="5" name="message" id="message" placeholder="Write your message here!" maxlength="2000" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-            </fieldset>
-            <p class="disclaimer">
-                This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-            </p>
-            <input type="submit" value="Submit">
-            
+            <div class="verification">
+                <label>Don't fill this out: <input name="verification-field" /></label>
+            </div>
+            <input class="submit-button" type="submit" value="Submit">
         </form>
     </main>
 

@@ -77,6 +77,7 @@ header {
     position: absolute;
     top: -9999px;
     left: -9999px;
+    display: none;
 }
 /* #nav__toggle:focus + .nav__toggle-label {
     border: 2px solid black;
@@ -241,81 +242,50 @@ header {
     background-color: white;
     text-align: center;
 }
-/* form reset */
-form input,
-form select,
-form textarea,
-form fieldset,
-form optgroup,
-form label,
-.StripeElement {
-  font-family: inherit;
-  font-size: 100%;
-  color: inherit;
-  border: none;
-  border-radius: 0;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+form {
+    max-width: 32rem;
 }
-form label,
-form legend {
+form label {
   font-size: 0.825rem;
   margin-bottom: 0.5rem;
 }
-/* form border, padding, margin, width */
 form input,
-form select,
-form textarea,
-.StripeElement {
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0.75em 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.3rem;
-  /* min-width: 25rem; */
+form textarea {
+    font-size: 100%;
+    font-family: inherit;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75em 1rem;
 }
 form input:focus,
-form select:focus,
-form textarea:focus,
-.StripeElement:focus {
-  background-color: white;
-  outline-style: solid;
-  outline-width: thin;
-  outline-color: gray;
-  outline-offset: -1px;
+form textarea:focus {
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: gray;
+    outline-offset: -1px;
 }
-form [type="text"],
-form [type="email"],
-.StripeElement {
-  width: 100%;
+form [type="submit"] {
+    width: auto;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    cursor: pointer;
+    float: left;
 }
-form [type="button"],
-form [type="submit"],
-form [type="reset"] {
-  width: auto;
-  cursor: pointer;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  background-color: var(--main-color);
-  color: white;
-  min-width: 0;
-}
-form [type="button"]:focus,
-form [type="submit"]:focus,
-form [type="reset"]:focus {
+form [type="submit"]:focus {
   outline: var(--main-grey) solid 0.2rem;
-  background-color: var(--main-color);
-  color: white;
 }
-
-form select {
-  text-transform: none;
+form [type="submit"]:hover {
+  background-color: var(--main-grey);
+}
+.verification {
+    display: none;
 }
 
 
@@ -366,18 +336,6 @@ footer {
 .links__image:hover {
     fill: #ddd;
 }
-.disclaimer {
-    font-size: 0.8rem;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #666;
-}
-.disclaimer > a {
-    color: #666;
-    text-decoration: underline;
-}
-.grecaptcha-badge { visibility: hidden; }
 
 
 @media (max-width: 55rem) {
