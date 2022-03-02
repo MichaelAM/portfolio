@@ -259,6 +259,9 @@ form textarea {
     margin-bottom: 1.5rem;
     padding: 0.75em 1rem;
 }
+form textarea {
+    display: block;
+}
 form input:focus,
 form textarea:focus {
     outline-style: solid;
